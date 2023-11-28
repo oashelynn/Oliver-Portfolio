@@ -1,6 +1,4 @@
 import Link from "next/link";
-import React from "react";
-import { routes } from "@/data/global";
 
 function Navbar({ currentPage }) {
   return (
@@ -9,11 +7,11 @@ function Navbar({ currentPage }) {
         <Link href="/">
           <span className="font-black text-xl flex items-center">
             <img
-              className="mr-2 transform hover:rotate-360 hover:scale-75 transition-transform duration-500"
-              src="/static/logos/logo_no_text.svg"
+              className="mr-2 transform hover:rotate-360 hover:scale-75 rounded-full transition-transform duration-500"
+              src="/static/logos/oliver.png"
               width="60"
             />
-            {"BraydenTW".split("").map((letter, index) => {
+            {"MyPortfolio".split("").map((letter, index) => {
               return (
                 <span key={index} className="hover:text-fun-pink hover:-mt-2 transition-all duration-500 hover:duration-100 click:goodbyeLetterAnim">
                   {letter}
@@ -23,7 +21,7 @@ function Navbar({ currentPage }) {
           </span>
         </Link>
       </li>
-      <ul className="flex items-center space-x-10">
+      {/* <ul className="flex items-center space-x-10">
         {routes.map((item, index) => {
           return (
             <li
@@ -38,7 +36,7 @@ function Navbar({ currentPage }) {
             </li>
           );
         })}
-      </ul>
+      </ul> */}
     </nav>
   );
 }

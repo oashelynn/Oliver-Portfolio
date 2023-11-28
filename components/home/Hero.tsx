@@ -1,4 +1,3 @@
-import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 
 function Hero() {
@@ -8,8 +7,8 @@ function Hero() {
         className="relative heroElem w-full pt-20 pb-40 m-auto flex justify-center text-center flex-col items-center z-1"
         style={{ maxWidth: "1200px" }}
       >
-        <p className="text-xl mb-5">Hey, I'm Brayden.</p>
-        <h1 className="heroTitle inline-block max-w-2xl lg:max-w-4xl  w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold heroShinyBg">
+        <p className="text-xl mb-5">Hey, I'm oliver.</p>
+        <h1 className="heroTitle inline-block max-w-2xl lg:max-w-4xl w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold heroShinyBg">
           I enjoy <span className="heroShiny1 text-fun-pink">building</span> and{" "}
           <span className="heroShiny2 text-fun-pink">designing</span> for the
           web.
@@ -23,11 +22,11 @@ function Hero() {
             style={{ animationDelay: "0.2s" }}
             src="/static/doodles/hero/nextjs.svg"
           />
-          <img
+          {/* <img
             className="sqD bottom-[-300px] -right-1/4 sm:right-[-20%] lg:bottom-[-310px] lg:right-[-120px] w-[400px]"
             style={{ animationDelay: "0.3s" }}
             src="/static/doodles/hero/brayden.svg"
-          />
+          /> */}
           <img
             className="sqD hidden sm:block bottom-[-340px] left-[-180px]"
             style={{ animationDelay: "0.4s" }}
@@ -44,7 +43,7 @@ function Hero() {
             src="/static/doodles/hero/dino.svg"
           />
           <img
-            className="sqD right-[-60px] sm:right-0 bottom-[-180px] lg:[5%]"
+            className="sqD right-[-60px] sm:right-0 bottom-[-250px] lg:[5%]"
             style={{ animationDelay: "0.7s" }}
             src="/static/doodles/hero/paintbrush.svg"
           />
@@ -58,6 +57,9 @@ function Hero() {
             src="/static/doodles/hero/code.svg"
           />
         </h1>
+        <h2 className="inline-block max-w-2xl lg:max-w-4xl w-auto relative tracking-tighter mb-10 heroShinyBg text-gray-300">
+          As a full-stack developer, I'm like a circus performer 🎪, juggling frontend and backend tasks with flair. With the creativity of Picasso 🖌️ and the precision of a Swiss watchmaker ⌚, I bring concepts to life. Turning coffee into code ☕💻 and chaos into order, I tame wild servers and weave intricate webs of logic. Into the bug-hunting jungle 🕷️🌳, I dive with gusto and come out victorious! For me, every line of code is a step towards digital harmony 🎶.
+        </h2>
         <ScrollLink
           activeClass="active"
           to="learnmore"

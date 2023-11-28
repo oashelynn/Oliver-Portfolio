@@ -1,4 +1,3 @@
-import React from "react";
 import { skills } from "@/data/content/home";
 
 function Skills() {
@@ -33,7 +32,7 @@ function Skills() {
               key={index}
               className="w-10 mx-auto flex items-center flex-col justify-center"
             >
-              <img src={item.icon} style={item.style} />
+              <img src={item.icon} height={40} style={item.style} />
               <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">
                 {item.title}
               </p>

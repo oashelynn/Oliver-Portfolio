@@ -1,14 +1,12 @@
-import Footer from "../global/Footer";
 import Head from "next/head";
-import MobileNavbar from "../global/MobileNavbar";
+import Footer from "../global/Footer";
 import Navbar from "../global/Navbar";
-import React, { ReactChildren } from "react";
 
 function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
   const pageTitle = `${
     currentPage === "Home"
-      ? "Brayden Wright - Web Developer, Designer, Creator."
-      : `${currentPage} - BraydenTW.io`
+      ? "OLIVER - Full Stack Developer | Frontend Developer | Backend Developer"
+      : `${currentPage} - OLIVER`
   }`;
   console.log(currentPage);
   return (
@@ -91,12 +89,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
       ></noscript>
 
       <main className="p-5 w-full flex-1 text-center">
-        <div className="hidden sm:block z-100">
+        <div className="z-100">
           <Navbar currentPage={currentPage} />
         </div>
-        <div className="-m-5 block sm:hidden z-100">
+        {/* <div className="-m-5 block sm:hidden z-100">
           <MobileNavbar />
-        </div>
+        </div> */}
         {children}
       </main>
       <Footer />

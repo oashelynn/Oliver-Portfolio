@@ -1,25 +1,20 @@
 type Route = {
-  title: string,
-  path: string
-}
+  title: string;
+  path: string;
+};
 
 type FooterCol = {
-  title: string,
+  title: string;
   links: {
-    name: string,
-    link: string,
-    icon?: string,
-    leavesWebsite: boolean
-  }[]
-}
+    name: string;
+    link: string;
+    icon?: string;
+    leavesWebsite: boolean;
+  }[];
+};
 
 type Footer = {
-  columns: FooterCol[]
-  support: {
-    buymeacoffee: string
-    paypal: string
-    message: string
-  }
+  columns: FooterCol[];
 };
 
 export const routes: Route[] = [
@@ -40,7 +35,6 @@ export const routes: Route[] = [
     path: "/designs",
   },
 ];
-
 
 export const footer: Footer = {
   columns: [
@@ -74,40 +68,35 @@ export const footer: Footer = {
       links: [
         {
           name: "GitHub",
-          link: "https://github.com/braydentw",
+          link: "https://github.com/mightyeagle329",
           icon: "/static/icons/github-f.svg",
           leavesWebsite: true,
         },
         {
-          name: "LinkedIn",
-          link: "https://www.linkedin.com/in/braydentw/",
-          icon: "/static/icons/linkedin-f.svg",
+          name: "Whatsapp",
+          link: "https://wa.me/18144199935",
+          icon: "/static/icons/whatsapp-f.svg",
           leavesWebsite: true,
         },
         {
-          name: "Dribbble",
-          link: "https://dribbble.com/braydentw",
-          icon: "/static/icons/dribbble-f.svg",
+          name: "Telegram",
+          link: "https://telegram.me/@calm94329",
+          icon: "/static/icons/telegram-f.svg",
           leavesWebsite: true,
         },
         {
-          name: "IndieHackers",
-          link: "https://indiehackers.com/braydentw",
-          icon: "/static/icons/indiehackers-f.svg",
+          name: "Skype",
+          link: "https://join.skype.com/invite/yccBLq8m5zrn",
+          icon: "/static/icons/skype-f.svg",
           leavesWebsite: true,
         },
         {
           name: "Email",
-          link: "mailto:contact@braydentw.io",
+          link: "mailto:cawsonoliver33@gmail.com",
           icon: "/static/icons/mail-f.svg",
           leavesWebsite: true,
         },
       ],
     },
   ],
-  support: {
-    buymeacoffee: "braydenw",
-    paypal: "braydentw",
-    message: "I appreciate your support very much! 💙",
-  },
 };
